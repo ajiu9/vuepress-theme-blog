@@ -1,0 +1,71 @@
+{
+  "name": "@ajiu9/vuepress-theme-blog",
+  "version": "2.3.3",
+  "description": "Default blog theme for VuePress",
+  "author": "ulivz<chl814@foxmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "ulivz/vuepress-theme-blog"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "styles",
+    "layouts",
+    "global-components",
+    "fonts",
+    "components"
+  ],
+  "scripts": {
+    "docs:build": "vuepress build docs",
+    "docs:dev": "vuepress dev docs",
+    "example:build": "vuepress build example --temp example/.temp",
+    "example:dev": "vuepress dev example --temp example/.temp",
+    "lint": "eslint . --ext .js,.vue"
+  },
+  "peerDependencies": {
+    "vuepress": "^1.0.0"
+  },
+  "dependencies": {
+    "@vuepress/plugin-blog": "^1.9.3",
+    "@vuepress/plugin-medium-zoom": "^1.7.1",
+    "@vuepress/plugin-nprogress": "^1.7.1",
+    "@vuepress/plugin-pwa": "^1.7.1",
+    "@vuepress/plugin-search": "^1.7.1",
+    "dayjs": "^1.8.19",
+    "remove-markdown": "^0.3.0",
+    "vue-feather-icons": "^4.21.0",
+    "vuepress-plugin-smooth-scroll": "^0.0.9"
+  },
+  "devDependencies": {
+    "@ajiu9/eslint-config": "^1.0.3",
+    "babel-eslint": "^10.0.3",
+    "conventional-changelog-cli": "^2.0.1",
+    "eslint": "^8.52.0",
+    "husky": "^3.1.0",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.5.0",
+    "sort-package-json": "^1.31.0",
+    "typescript": "^5.2.2",
+    "vuepress": "^1.7.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "package.json": [
+      "sort-package-json",
+      "git add"
+    ]
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
