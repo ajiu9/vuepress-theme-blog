@@ -351,7 +351,7 @@ Custom the pagination component.
 
 The default is the 
 [pagination component](https://vuepress-plugin-blog.billyyyyy3320.com/components/#pagination) powerful by 
-[@vuepress/plugin-blog](https://github.com/ulivz/vuepress-plugin-blog):
+[@vuepress/plugin-blog](https://github.com/ulivz/vuepress-plugin-blog):       
 
 <img src="../assets/pagination.png" width="250" height="" style=""/>
 
