@@ -1,13 +1,8 @@
 {
   "name": "@ajiu9/vuepress-theme-blog",
-  "version": "2.3.3",
+  "version": "1.0.0",
   "description": "Default blog theme for VuePress",
-  "author": "ulivz<chl814@foxmail.com>",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "ulivz/vuepress-theme-blog"
-  },
   "main": "index.js",
   "files": [
     "index.js",
@@ -46,7 +41,6 @@
     "husky": "^3.1.0",
     "jest": "^24.9.0",
     "lint-staged": "^9.5.0",
-    "sort-package-json": "^1.31.0",
     "typescript": "^5.2.2",
     "vuepress": "^1.7.1"
   },
@@ -56,12 +50,8 @@
     }
   },
   "lint-staged": {
-    "*.{js,vue}": [
+    "*.{js,vue,json}": [
       "eslint --fix",
-      "git add"
-    ],
-    "package.json": [
-      "sort-package-json",
       "git add"
     ]
   },

@@ -1,8 +1,8 @@
 module.exports = {
-  title: '@vuepress/theme-blog',
+  title: 'Me',
   description: 'Official blog theme for VuePress',
+  theme: '@ajiu9/vuepress-theme-blog',
   themeConfig: {
-    repo: 'vuepressjs/vuepress-theme-blog',
     docsDir: 'docs',
     editLinks: true,
     editLinkText: 'Edit this page on GitHub',

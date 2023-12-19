@@ -34,7 +34,6 @@ export default {
       @toggle-sidebar="isMobileHeaderOpen = !isMobileHeaderOpen"
     />
     <div class="content-wrapper" @click="isMobileHeaderOpen = false">
-      fsd
       <DefaultGlobalLayout />
     </div>
     <Footer />
