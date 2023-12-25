@@ -27,21 +27,23 @@ export default {
 </script>
 
 <template>
-  <div id="vuepress-theme-blog__global-layout">
+  <div id="global-layout">
     <Header />
     <MobileHeader
       :is-open="isMobileHeaderOpen"
       @toggle-sidebar="isMobileHeaderOpen = !isMobileHeaderOpen"
     />
     <div class="content-wrapper" @click="isMobileHeaderOpen = false">
-      <DefaultGlobalLayout />
+      <PlumWrapper>
+        <DefaultGlobalLayout />
+      </PlumWrapper>
     </div>
     <Footer />
   </div>
 </template>
 
 <style lang="stylus">
-#vuepress-theme-blog__global-layout
+#global-layout
   word-wrap break-word
 
 .content-wrapper

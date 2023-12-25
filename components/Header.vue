@@ -9,6 +9,7 @@ export default {
 
 <template>
   <section id="header-wrapper">
+    header
     <header id="header">
       <div class="header-wrapper">
         <div class="title">
